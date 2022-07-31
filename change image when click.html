@@ -2,8 +2,13 @@
 <html>
     <head>
         <title>change image when click</title>
+        <script src="change image when click.js"></script>
     </head>
-    <body>
-        <img src="image/245473094_4841771719175447_6699086587384949460_n.jpg" alt="image1" width="200rm">
+    <body style="background-color: rgb(98, 204, 32);">
+        <script>
+            var onImg= "image/img1.jpg";
+            var offImg= "image/img2.jpg";
+            </script>
+            <img src="image/img1.jpg" onclick="this.src = this.src == offImg ? onImg : offImg;"/>
     </body>
 </html>
