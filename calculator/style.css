@@ -1,0 +1,10 @@
+body    {
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        /* background-color: black; */
+    }
+input{
+    border-radius: 15px;
+    font-size: larger;
+}
