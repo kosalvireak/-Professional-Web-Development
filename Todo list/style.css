@@ -7,7 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #add{
-    background-color:red;
+    background-color:#000000;
     border:0;
     color:burlywood;
     padding:10px 10px;
@@ -17,6 +17,9 @@ body{
     cursor:pointer;
     margin-top: 2rem;
 }
+h1{
+    color: white;
+}
 #task{
     padding: 10px;
     border: 0;
@@ -25,12 +28,18 @@ body{
     max-width: 200px;
 }
 #wrapper{
-    width:450px;
-    background-color:#000365;
-    margin:50%;
+    width: 500px;
+    height: fit-content;
+    background-color:#8d1b5a;
     padding-bottom:30px;
     padding-left:50px;
     padding-top:30px;
     padding-right:65px; 
     border-radius:25px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
