@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#add{
+    background-color:red;
+    border:0;
+    color:burlywood;
+    padding:10px 10px;
+    
+    font-size: large;
+    margin-left: 0;
+    cursor:pointer;
+    margin-top: 2rem;
+}
+#task{
+    padding: 10px;
+    border: 0;
+    font-size: large;
+    width: 100%;
+    max-width: 200px;
+}
+#wrapper{
+    width:450px;
+    background-color:#000365;
+    margin:50%;
+    padding-bottom:30px;
+    padding-left:50px;
+    padding-top:30px;
+    padding-right:65px; 
+    border-radius:25px;
+}
