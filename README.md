@@ -1,2 +1,5 @@
 # -Professional-Web-Development
-For course >> Learn Professional Web Development Skills From Scratch -2021
+## jQuery
+JQuery are reference in dollar sign `$`
+
+Every time you see the dollar sign `$`, It is **jQuery**

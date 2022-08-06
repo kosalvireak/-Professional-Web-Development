@@ -3,18 +3,30 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
-  $("p").click(function(){
+  $("button").click(function(){
+    $("h2").hide();
+    $("#heading").hide();
+    $(".para").hide();
+    $("p:first").hide();
     $(this).hide();
-  });
-});
+  })
+})
+
+
+
+
 </script>
 </head>
 <body>
 
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
-<p>Click me too!</p>
+<p class="para">para</p>
+<h1  id="heading">heading</h1>
+<h2>Hello h2</h2>
+<button>Click</button>
 
 </body>
 </html>
