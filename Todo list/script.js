@@ -18,14 +18,15 @@ function add() {
 }
 
 function clearDefault(a) {
-    if (a.defaultValue = a.value) { a.value = "" }
-};
-
-function remove() {
+    if (a.defaultValue == a.value) { a.value = "" }
 }
+
+// Remove Element by the remove button
+function remove() {
 var id = this.getAttribute('id');
 var todos = get_todos();
 todos.splice(id, 1);
 localStorage.setItem('todo', JSON.stringify(todos));
 show();
 return false;
+}
