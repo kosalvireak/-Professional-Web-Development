@@ -13,12 +13,15 @@ function add() {
     var todos = get_todos();
     todos.push(task);
     localStorage.setItem('todo', JSON.stringify(todos));
+
     show();
+    
     return false;
 }
 
 function clearDefault(a) {
-    if (a.defaultValue == a.value) { a.value = "" }
+    if (a.defaultValue == a.value) {
+        a.value = "" }
 }
 
 // Remove Element by the remove button
@@ -30,3 +33,23 @@ localStorage.setItem('todo', JSON.stringify(todos));
 show();
 return false;
 }
+
+
+function show(){
+    var todos = get_todos();
+
+    var html = '<ul>';
+    for (var i =0; i<todos.length;i++){
+        html += '<li>' + todos[i] + '<button class="remove" id = "'+i+'">Delete</button></li>';
+    };
+
+    document.getElementById('todos').innerHTML = html;
+    var buttons = document.getElementsByClassName('remove');
+    for (var i=0 ; i<buttons.length;i++){
+        buttons[i].addEventListener('click',remove);
+    };
+
+}
+
+document.getElementById('add').addEventListener('click',add);
+show();
