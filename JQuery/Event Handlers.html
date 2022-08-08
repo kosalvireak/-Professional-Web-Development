@@ -9,41 +9,49 @@
 <body>
     <p>Just a demo for JGuery</p>
     <script>
-        $(document).ready(function () {
-            $("p").hover(
-                function () {
-                    $(this).css({ "background-color": "orange" });
-                },
-                function () {
-                    $(this).css({ "background-color": "green" });
-                },
+        // $(document).ready(function () {
+        //     $("p").hover(
+        //         function () {
+        //             $(this).css({ "background-color": "orange" });
+        //         },
+        //         function () {
+        //             $(this).css({ "background-color": "green" });
+        //         },
 
-            )
-            $("p").click(
-                function () {
-                    $(this).css({ "background-color": "cyan" });
-                    $(this).css({ "color": "black" });
-                }
-            )
-            $("p").dblclick(
-                function(){
-                    $(this).css({"font-size":"100px"});
-                },
-                function(){
-                    $(this).css({"font-size":"30px"});
-                }
+        //     )
+        //     $("p").click(
+        //         function () {
+        //             $(this).css({ "background-color": "cyan" });
+        //             $(this).css({ "color": "black" });
+        //         }
+        //     )
+        //     $("p").dblclick(
+        //         function(){
+        //             $(this).css({"font-size":"100px"});
+        //         },
+        //         function(){
+        //             $(this).css({"font-size":"30px"});
+        //         }
 
-            )
-            $("p").scroll(
-                function(){
-                    $(this).css({"background-color": "black"});
-                }
-
-            )
-
-
-
-        })
+        //     )
+        //     $("p").scroll(
+        //         function(){
+        //             $(this).css({"background-color": "black"});
+        //         })
+        // })
+        $(document).ready(function(){
+            $("p").on({
+              mouseenter: function(){
+                $(this).css("background-color", "lightgray");
+              },  
+              mouseleave: function(){
+                $(this).css("background-color", "lightblue");
+              }, 
+              click: function(){
+                $(this).css("background-color", "yellow");
+              }  
+            });
+          });
     </script>
     <style>
         body {
