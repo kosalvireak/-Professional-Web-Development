@@ -1,26 +1,30 @@
-#all{
+#all {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #fadeIn {
     align-items: center;
     text-align: center;
     max-width: 300px;
     margin: auto;
 }
+
 #fadeOut {
     align-items: center;
     text-align: center;
     max-width: 300px;
     margin: auto;
 }
+
 #fadeToggle {
     align-items: center;
     text-align: center;
     max-width: 300px;
     margin: auto;
 }
+
 #fadeTo {
     align-items: center;
     text-align: center;
