@@ -6,28 +6,37 @@
     <link rel="stylesheet" href="fade.css">
     <script>
         $(document).ready(function () {
+            // <!-- Chaining -->
             $("#chain").click(function () {
                 $("#he").css("background-color", "cyan").slideUp(2500).slideDown(5000);
             });
+            // <!-- Stop -->
             $("#stop").click(function(){
                 $("#he").stop();
+                $("#he").hide("slow",function(){
+                    alert("The div already hidden");
+                })
             });
+            // <!-- fadeIn() -->
             $(".btn1").click(function () {
                 $("#div11").fadeIn();
                 $("#div21").fadeIn("slow");
                 $("#div31").fadeIn(3000);
             });
+            // <!-- fadeOut() -->
 
             $(".btn2").click(function () {
                 $("#div12").fadeOut();
                 $("#div22").fadeOut("slow");
                 $("#div32").fadeOut(3000);
             });
+            // <!-- fadeToggle() -->
             $(".btn3").click(function () {
                 $("#div13").fadeToggle(1000);
                 $("#div23").fadeToggle(2000);
                 $("#div33").fadeToggle(3000);
             });
+            // <!-- fadeTo() -->
             $(".btn4").click(function () {
                 $("#div14").fadeTo("slow", 0.05);
                 $("#div24").fadeTo("slow", 0.04);
