@@ -7,29 +7,70 @@
         $(document).ready(function () {
             $("#flip").click(function () {
                 $("#panel").slideDown("slow");
+                $("#flip_down").slideDown("slow");
+
             });
+            $("#flip_down").click(function () {
+                $("#panel").slideUp("slow");
+                $(this).slideUp("slow");
+
+            });
+            $("#flip_togger").click(function(){
+                $("#panel1").slideToggle("slow");
+            });
+
+            
+
+
         });
     </script>
     <style>
-        #panel,
         #flip {
             padding: 5px;
             text-align: center;
-            background-color: #e5eecc;
+            background-color: #5c790f;
             border: solid 1px #c3c3c3;
         }
 
         #panel {
             padding: 50px;
             display: none;
+            background-color: #e5eecc;
+            text-align: center;
+        }
+
+        #panel1 {
+            padding: 50px;
+            display: none;
+            background-color: #e5eecc;
+            text-align: center;
+        }
+
+        #flip_down {
+            padding: 5px;
+            text-align: center;
+            background-color: #b1ca6e;
+            border: solid 1px #c3c3c3;
+        }
+
+        #flip_togger {
+            padding: 5px;
+            text-align: center;
+            background-color: #5c790f;
+            border: solid 1px #c3c3c3;
         }
     </style>
 </head>
 
-<body>
+<body style="max-width: 300px; align-items: center; margin: auto;">
 
+    <div id="flip_togger">Click to slide Up/Down panel</div>
+    <div id="panel1">Hello world</div>
     <div id="flip">Click to slide down panel</div>
-    <div id="panel">Hello world!</div>
+    <div>
+        <div id="panel">Hello world</div>
+        <div id="flip_down" style="display: none;">Click to slide Up panel</div>
+    </div>
 
 </body>
 
