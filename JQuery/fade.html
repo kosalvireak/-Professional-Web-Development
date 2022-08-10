@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="fade.css">
     <script>
         $(document).ready(function () {
+            $("#chain").click(function () {
+                $("#he").css("background-color", "cyan").slideUp(2500).slideDown(5000);
+            });
+            $("#stop").click(function(){
+                $("#he").stop();
+            });
             $(".btn1").click(function () {
                 $("#div11").fadeIn();
                 $("#div21").fadeIn("slow");
@@ -21,15 +27,14 @@
                 $("#div13").fadeToggle(1000);
                 $("#div23").fadeToggle(2000);
                 $("#div33").fadeToggle(3000);
-            })
+            });
             $(".btn4").click(function () {
                 $("#div14").fadeTo("slow", 0.05);
                 $("#div24").fadeTo("slow", 0.04);
                 $("#div34").fadeTo("slow", 0.07);
-            })
-            $("button").click(function(){
-                $("#he").css("background-color","cyan").slideUp(500).slideDown(2000);
-            })
+            });
+            // chaining
+
 
 
 
@@ -41,6 +46,7 @@
 <body>
     <div id="all">
         <div id="fadeIn">
+            <!-- fadeIn() -->
             <p class="fixed">Demonstrate fadeIn() </p>
 
             <button class="btn1">Click to fade in boxes</button><br><br>
@@ -50,6 +56,7 @@
             <div id="div31" style="width:80px;height:80px;display:none;background-color:blue;"></div>
         </div>
         <div id="fadeOut">
+            <!-- fadeOut() -->
             <p class="fixed">Demonstrate fadeOut() </p>
 
             <button class="btn2">Click to fade out boxes</button><br><br>
@@ -60,6 +67,7 @@
 
         </div>
         <div id="fadeToggle">
+            <!-- fadeToggle() -->
             <p>Demonstrate fadeToggle() </p>
 
             <button class="btn3">Click to fade in/out boxes</button><br><br>
@@ -70,6 +78,7 @@
 
         </div>
         <div id="fadeTo">
+            <!-- fadeTo() -->
             <p>Demonstrate fadeTo() </p>
 
             <button class="btn4">Click to fade boxes</button><br><br>
@@ -81,9 +90,14 @@
         </div>
 
     </div>
-    <button>check to test chain in blue box</button>
-    <div style="background-color: blue; width: max;height: 100px; display: show;" id="he" > </div>
-    
+    <!-- Chaining -->
+    <button id="chain">click to test chain in blue box</button>
+
+    <!-- Stop -->
+    <button id="stop">click to stop blue box</button>
+    <div style="background-color: blue; width: max;height: 100px; display: show; text-align: center;" id="he"> me</div>
+
+
 </body>
 
 </html>
