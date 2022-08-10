@@ -1,0 +1,34 @@
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #5c790f;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+    background-color: #e5eecc;
+    text-align: center;
+}
+
+#panel1 {
+    padding: 50px;
+    display: none;
+    background-color: #e5eecc;
+    text-align: center;
+}
+
+#flip_down {
+    padding: 5px;
+    text-align: center;
+    background-color: #b1ca6e;
+    border: solid 1px #c3c3c3;
+}
+
+#flip_togger {
+    padding: 5px;
+    text-align: center;
+    background-color: #5c790f;
+    border: solid 1px #c3c3c3;
+}

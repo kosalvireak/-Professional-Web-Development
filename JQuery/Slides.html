@@ -3,6 +3,8 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="Slides.css">
+    
     <script>
         $(document).ready(function () {
             $("#flip").click(function () {
@@ -15,51 +17,16 @@
                 $(this).slideUp("slow");
 
             });
-            $("#flip_togger").click(function(){
+            $("#flip_togger").click(function () {
                 $("#panel1").slideToggle("slow");
             });
 
-            
+
 
 
         });
     </script>
-    <style>
-        #flip {
-            padding: 5px;
-            text-align: center;
-            background-color: #5c790f;
-            border: solid 1px #c3c3c3;
-        }
-
-        #panel {
-            padding: 50px;
-            display: none;
-            background-color: #e5eecc;
-            text-align: center;
-        }
-
-        #panel1 {
-            padding: 50px;
-            display: none;
-            background-color: #e5eecc;
-            text-align: center;
-        }
-
-        #flip_down {
-            padding: 5px;
-            text-align: center;
-            background-color: #b1ca6e;
-            border: solid 1px #c3c3c3;
-        }
-
-        #flip_togger {
-            padding: 5px;
-            text-align: center;
-            background-color: #5c790f;
-            border: solid 1px #c3c3c3;
-        }
-    </style>
+    
 </head>
 
 <body style="max-width: 300px; align-items: center; margin: auto;">
