@@ -1,0 +1,241 @@
+<!-- fork -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotels in PhnomPenh</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100|Pontano+Sans|Ruda:900" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./breadcrumb.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Ruda", sans-serif;
+            color: #fff;
+            background-color: #1e1e24;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            color: lightgreen;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        .jumbotron {
+            height: 30vh;
+            background-image: url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+            background-position: bottom center;
+            background-size: cover;
+        }
+
+        .jumbotron h1 {
+            position: relative;
+            top: 74px;
+            margin: 0;
+            font-size: 5rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 4px 2px grey;
+        }
+
+        .breadcrumb li {
+            margin: 10px 0;
+            padding: 30px 10px;
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .breadcrumb li+li::before {
+            content: ">";
+        }
+
+        /* Content */
+
+        h2 {
+            color: #fff;
+            font-family: "Catamaran", sans-serif;
+            margin: 0;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #d7263d;
+            font-family: "Ruda", sans-serif;
+            font-size: 32px;
+            margin: 0;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.75);
+            font-family: "Pontano Sans", sans-serif;
+            margin: 0px;
+            text-align: left;
+            font-size: 1.6rem;
+            width: 70%;
+        }
+
+        .hotel {
+            border: 1px solid #fff;
+            margin-top: 60px auto;
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .hotel .hotel-img {
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        .hotel-description {
+            position: relative;
+            left: 100px;
+            margin-bottom: 100px;
+        }
+
+        .book {
+            width: 100%;
+            height: 80px;
+            background-color: #d7263d;
+        }
+
+        .book a {
+            position: relative;
+            top: 24px;
+            font-size: 2rem;
+        }
+
+        /* footer */
+
+        footer {
+            height: 300px;
+            background-color: #d7263d;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>HOTELS IN PHNOMPENH</h1>
+    </div>
+
+    <!-- Breadscrumb -->
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">PhnomPenh</a></li>
+            <li><a href="#">Tourism</a></li>
+            <li><a href="#">Hotels</a></li>
+        </ul>
+    </div>
+
+    <!-- Hotels 1 -->
+    <div class="hotel">
+        <div class="hotel-img">
+            <img src="https://pix10.agoda.net/hotelImages/631/63170/63170_16042114260041678562.jpg?ca=6&ce=1&s=1024x768"
+                alt="#" height="500px" />
+        </div>
+        <div class="hotel-description">
+            <ul>
+                <li>
+                    <h2>Sokha Hotels</h2>
+                </li>
+                <li>
+                    <h3>500$/night</h3>
+                </li>
+                <li>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, reiciendis cum. Earum autem
+                        possimus animi.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="book">
+            <a href="#">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Hotel 2 -->
+
+    <div class="hotel">
+        <div class="hotel-img">
+            <img src="https://pix10.agoda.net/hotelImages/631/63170/63170_16042114260041678562.jpg?ca=6&ce=1&s=1024x768"
+                alt="#" height="500px" />
+        </div>
+        <div class="hotel-description">
+            <ul>
+                <li>
+                    <h2>Phnom Penh Hotels</h2>
+                </li>
+                <li>
+                    <h3>500$/night</h3>
+                </li>
+                <li>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, reiciendis cum. Earum autem
+                        possimus animi.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="book">
+            <a href="#">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Hotel 3 -->
+
+    <div class="hotel">
+        <div class="hotel-img">
+            <img src="https://pix10.agoda.net/hotelImages/631/63170/63170_16042114260041678562.jpg?ca=6&ce=1&s=1024x768"
+                alt="#" height="500px" />
+        </div>
+        <div class="hotel-description">
+            <ul>
+                <li>
+                    <h2>Riverside Hotels</h2>
+                </li>
+                <li>
+                    <h3>500$/night</h3>
+                </li>
+                <li>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, reiciendis cum. Earum autem
+                        possimus animi.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="book">
+            <a href="#">Book Now</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum dolorum natus laborum iusto fuga
+            quas soluta totam fugit dolores.</p>
+    </footer>
+</body>
+
+</html>
